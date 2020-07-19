@@ -14,12 +14,12 @@ contract TestGreeter {
 
     function testGreet() public {
         string memory expected = "Hello, World!";
-        Assert.equal(greeter.greet(), expected, "Greeter message should equals to expected.");
+        Assert.equal(greeter.greeting(), expected, "Greeter message should equals to expected.");
     }
 
     function testUpdateGreeting() public {
         greeter.updateGreeting("Hello, Solidity!");
         string memory expected = "Hello, Solidity!";
-        Assert.equal(greeter.greet(), expected, "Greeter should be updated");
+        Assert.equal(greeter.greeting(), expected, "Greeter should be updated");
     }
 }

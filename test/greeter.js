@@ -4,7 +4,7 @@ contract("Greeter", (accounts) => {
   it("should return greeting", async () => {
     const greeterInstance = await Greeter.deployed();
 
-    const greeting = await greeterInstance.greet();
+    const greeting = await greeterInstance.greeting();
 
     assert.equal(greeting, "Hello, World!", "Greeting should match to expected.");
   })
